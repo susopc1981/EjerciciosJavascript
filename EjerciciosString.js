@@ -118,10 +118,6 @@ console.log(removeExtraWhitespace(" What's up "));
 // Ejercicio 14
 
 function amsterdamIsFirstWord(description) {
-  if (description.substring(0, 9) == "Amsterdam") {
-    return true;
-  } else {
-    return false;
-  }
+  return description.substring(0, 9).toUpperCase() === "AMSTERDAM";
 }
 console.log(amsterdamIsFirstWord("Amsterdam es la capital de NL"));
